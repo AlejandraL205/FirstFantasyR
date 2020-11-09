@@ -1,0 +1,55 @@
+﻿<Page x:Class="FirstFantasy.Paginas.PaginaR"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FirstFantasy.Paginas"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="798"
+      Title="PaginaR">
+
+    <Grid Background="#FF7AF3FF">
+        
+        <Label Content="Name" HorizontalAlignment="Left" Margin="82,116,0,0" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold" Height="31" Width="51"/>
+        <TextBox Name="txtName" HorizontalAlignment="Left" Margin="160,123,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="24" BorderBrush="{x:Null}"/>
+
+        <Label Content="Class" HorizontalAlignment="Left" Margin="81,162,0,0" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold" Height="31" Width="44"/>
+        <ComboBox Name="CboxClass" HorizontalAlignment="Left" Margin="159,162,0,0" VerticalAlignment="Top"  Width="160" Height="24" BorderBrush="{x:Null}">
+            <ComboBoxItem Content="" IsSelected="True" />
+            <ComboBoxItem Content="Cleric" />
+            <ComboBoxItem Content="Fighter" />
+            <ComboBoxItem Content="Rouge" />
+            <ComboBoxItem Content="Wizard" />
+        </ComboBox>
+
+        <Label Content="Weapon" HorizontalAlignment="Left" Margin="81,198,0,0" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold" Height="31" Width="66"/>
+        <ComboBox x:Name="CboxWeapon" HorizontalAlignment="Left" Margin="160,204,0,0" VerticalAlignment="Top" Width="160" Height="24">
+            <ComboBoxItem Content="" IsSelected="True" />
+            <ComboBoxItem Content="Axe" />
+            <ComboBoxItem Content="Bow" />
+            <ComboBoxItem Content="Sword" />
+        </ComboBox>
+
+        <Label Content="Armor" HorizontalAlignment="Left" Margin="82,243,0,0" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold" Height="31" Width="54"/>
+        <ComboBox x:Name="CboxArmor" HorizontalAlignment="Left" Margin="160,249,0,0" VerticalAlignment="Top" Width="160" Height="24">
+            <ComboBoxItem Content="" IsSelected="True" />
+            <ComboBoxItem Content="Gold Armor" />
+            <ComboBoxItem Content="Silver Armor" />
+            <ComboBoxItem Content="Wooden Armor" />
+        </ComboBox>
+
+        <Button Name="BtnCreate" Content="Create" HorizontalAlignment="Left" Margin="86,285,0,0" VerticalAlignment="Top" Width="235" Click="BtnCreate_Click" BorderBrush="Black" Background="White" FontWeight="Bold" Height="24" />
+
+        <Label Content="User information" HorizontalAlignment="Left" Margin="393,32,0,0" VerticalAlignment="Top" FontSize="25" FontWeight="Bold" FontFamily="Britannic Bold" Height="34" Width="221"/>
+        <TextBlock Name="TxtOutput" HorizontalAlignment="Left" Margin="394,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="126" Width="336" Background="#FF112A7D" Foreground="White"/>
+
+
+        <Label Content="Attack information" HorizontalAlignment="Left" Margin="393,215,0,0" VerticalAlignment="Top" FontSize="25" FontWeight="Bold" FontFamily="Britannic Bold" Height="35" Width="244"/>
+        <TextBox Name="txtAttackInformation" HorizontalAlignment="Left" Margin="396,247,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="339" Height="128" BorderBrush="White" SelectionBrush="#FF00355F"/>
+
+        <Button Name="btnAttack" Content="Attack" HorizontalAlignment="Left" Margin="398,385,0,0" VerticalAlignment="Top" Width="155" Click="btnAttack_Click" Background="White" BorderBrush="Black" FontWeight="Bold" Height="18"  />
+        
+        <Button Name="btnAInventory" Content="Inventory" HorizontalAlignment="Left" Margin="580,385,0,0" VerticalAlignment="Top" Width="155" Click="btnAttack_Click" Background="White" BorderBrush="Black" FontWeight="Bold" Height="18"  />
+        
+    </Grid>
+</Page>

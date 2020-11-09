@@ -1,0 +1,48 @@
+﻿<Page x:Class="FirstFantasy.Paginas.Inventario"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FirstFantasy.Paginas"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Inventario">
+
+    <Grid Background="#FF007F82">
+
+        <Label Content="Invenrario" HorizontalAlignment="Left" Margin="27,73,0,0" VerticalAlignment="Top" FontSize="25" FontWeight="Bold" FontFamily="Britannic Bold" Height="34" Width="221"/>
+
+        <DataGrid Name="DataGrid" HorizontalAlignment="Left" Width="536" Height="257" VerticalAlignment="Top" Foreground="Black" BorderBrush="Black" Background="LightGray" FontFamily="Arial" Margin="30,112,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Width="180" Binding="{Binding itemName}" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+                <DataGridTextColumn Header="Description" Width="*" Binding="{Binding itemDescription}" Foreground="Black" FontSize="12"/>
+
+            </DataGrid.Columns>
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="#FFB9D9EB"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="BorderThickness" Value="0,0,1,2"/>
+                    <Setter Property="BorderBrush" Value="Black"/>
+                </Style>
+                <Style TargetType="{x:Type DataGrid}">
+                    <Setter Property="Background" Value="White"/>
+                </Style>
+                <Style TargetType="{x:Type DataGridCell}">
+                    <Setter Property="Background" Value="#FF9C9C9C"/>
+                </Style>
+
+            </DataGrid.Resources>
+
+
+        </DataGrid>
+        <ComboBox x:Name="CboxInventary" HorizontalAlignment="Left" Margin="606,231,0,0" VerticalAlignment="Top" Width="145">
+            <ComboBoxItem Content="" IsSelected="True" />
+            <ComboBoxItem Content="Axe" />
+            <ComboBoxItem Content="Bow" />
+            <ComboBoxItem Content="Sword" />
+        </ComboBox>
+
+
+    </Grid>
+</Page>

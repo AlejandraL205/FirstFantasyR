@@ -4,11 +4,11 @@ using System.Text;
 
 namespace FirstFantasy.Classes.Equipment
 {
-    public class Axe : Weapon
+    class Bow : Weapon
     {
-        public Axe() 
+        public Bow()
         {
-            Gg = 20;
+            Gg = 8;
         }
     }
 }

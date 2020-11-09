@@ -18,7 +18,7 @@ namespace FirstFantasy.Classes.Player
         public string CastSpell()
         {
 
-            return "KAAAA NBUM";
+            return "KAAAA BOOM";
         }
 
     }
